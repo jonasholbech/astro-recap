@@ -1,5 +1,5 @@
-# Dette er er en test
+# Astro Re-Cap
 
-## mindre tekst
+Husk når i `clone`er at køre
 
-lorem ipsum
+`npm install`
