@@ -1,0 +1,13 @@
+:root {
+}
+* {
+  /* WIDTH er inkl padding og border */
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+}
+
+li:nth-child(2) article {
+  border: 10px solid royalblue;
+}

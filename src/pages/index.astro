@@ -1,15 +1,30 @@
 ---
+//BUILD TIME
+import Topic from "../components/Topic.astro";
+import Main from "../layouts/Main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main title="Ting vi skal nå">
+  <h1>Ting vi skal nå</h1>
+  <ul>
+    <li>
+      <Topic
+        header="Components"
+        description="byggeklodser i Astro og lignende"
+      />
+    </li>
+    <li><Topic header="Slots" description="sprækker til indhold?" /></li>
+    <li>
+      <Topic
+        header="Props"
+        description="vores egne attributter der kan samles op"
+      />
+    </li>
+    <li>
+      <Topic
+        header="pages"
+        description="duh? det er jo bare sider med venlige URL'er"
+      />
+    </li>
+  </ul>
+</Main>

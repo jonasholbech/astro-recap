@@ -1,0 +1,21 @@
+---
+//BUILD TIME
+import Main from "../layouts/Main.astro";
+//
+const data = await fetch(
+  "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
+).then((res) => res.json());
+console.log(data);
+---
+
+<Main title="Pokemon">
+  <ul>
+    {
+      data.results.map((pokemon) => {
+        return <li>{pokemon.name}</li>;
+      })
+    }
+  </ul>
+</Main>
+
+<script></script>
